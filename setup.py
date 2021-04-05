@@ -23,11 +23,12 @@ if __name__ == '__main__':
         long_description_content_type='text/markdown',
         extras_require={
             # Following advice in this answer: https://stackoverflow.com/a/28842733/220215
-            # Install with: pip install -e .[dev]
+            # Install with: pip install -e '.[dev]'
             'dev': [
                 'pycodestyle',
                 'mypy',
-                'twine'
+                'twine',
+                'codecheck'
             ]
         },
         entry_points={
